@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+  <title>Producto</title>
+</head>
+
+<body>
+  <header style="height: 10px ;">
+  </header>
+  <div style="height: 30px;"></div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="card shadow-lg p-3 mb-5 bg-white ">
+          <div class="card-header">Registro de producto</div>
+          <div class="card-body">
+            <form id="form1" action="guardado.html" class="needs-validation" novalidate>
+              <div class="form-row">
+                <div class="mb-3">
+                  <label for="codigo">Código:</label>
+                  <input name="codigo" type="text" class="form-control" id="codigo" placeholder="" value="" required>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+                <div class="mb-3">
+                  <label for="descripcion">Descripción:</label>
+                  <input name="descripcion" type="text" class="form-control" id="descripcion" placeholder="" value=""
+                    required>
+                  <div class="valid-feedback">¡Ok válido!</div>
+                  <div class="invalid-feedback">Complete el campo.</div>
+                </div>
+              </div>
+
+              <div class="mb-3">
+                <label for="barra">Codigo de barra:</label>
+                <input name="barra" type="number" class="form-control" id="barra" placeholder="" required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="precio">Precio unitario:</label>
+                <input name="precio" type="number" class="form-control" id="precio" placeholder="" required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+
+              <div class="mb-3">
+                <label for="stock">Stock:</label>
+                <input name="stock" type="number" class="form-control" id="stock" placeholder="" required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+              <div class="mb-3">
+                <label for="proveedor">Proveedor:</label>
+                <input name="proveedor" type="text" class="form-control" id="proveedor" placeholder="" required>
+                <div class="valid-feedback">¡Ok válido!</div>
+                <div class="invalid-feedback">Complete el campo.</div>
+              </div>
+              <div clas="mb-3">
+                <label for="estado">Estado:</label>
+                <div class="form-check">
+                  <input class="form-check-input mb-3" type="checkbox" value="" id="estado">
+                  <label class="form-check-label mb-3" for="estado">
+                    Activo
+                  </label>
+              </div>
+              <div clas="mb-3">
+                <label for="categoria">Categoria:</label>
+              <select class="form-select mb-3" aria-label="Default select example">
+                <option selected>Categoria 1</option>
+                <option value="1">Categoria 2</option>
+                <option value="2">Categoria 3</option>
+                <option value="3">Categoria 4</option>
+              </select>
+            </div>
+
+              <div clas="mb-3">
+              <a href="guardado.html"><button class="btn btn-primary" type="submit">Guardar</button></a>
+              <button class="btn btn-primary" type="button">Cancelar</button>
+              </div>
+          
+        </div>
+      </div>
+      </form>
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+
+  <script src="validacion.js"></script>
+</body>
+
+</html>
